@@ -1,9 +1,9 @@
 import React from 'react';
 
 export default class Rect extends React.Component {
-	constructor(){
-		super()
-	}
+	// constructor(){
+	// 	super()
+	// }
 	prepareData(){
 		let rect = {
 			x: this.props.path[0].x,

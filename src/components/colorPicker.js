@@ -41,7 +41,7 @@ export default class ColorPicker extends React.Component {
 			};
 			let borderStyle = {
 			    display: 'flex',
-			    border: 1,
+			    // border: 1,
 				border: this.state.selectedColorIndex === i?'1px solid':'',
 				margin: 1
 			};

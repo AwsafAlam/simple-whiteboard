@@ -20,6 +20,7 @@ export default class History extends React.Component {
 	}
 
 	handleClick(index){
+		// console.log(index)
 		return function(){
 			EventBus.emit(EventBus.PICK_VERSION,index);
 		}
@@ -29,7 +30,7 @@ export default class History extends React.Component {
 		let versions = this.state.history.map((version, i)=><span 
 			key={i} 
 			onClick={this.handleClick(i).bind(this)}
-			className={this.state.selectedIndex===i?'selected':''}
+			className={this.state.selectedIndex=== i ?'selected '+version:''}
 			></span>)
 		return(<div id="history"> History: {versions} </div>);
 	}

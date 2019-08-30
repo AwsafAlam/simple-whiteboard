@@ -1,9 +1,9 @@
 import React from 'react';
 
 export default class Ellipse extends React.Component {
-	constructor(){
-		super()
-	}
+	// constructor(){
+	// 	super()
+	// }
 	prepareData(){
 		let ellipse = {
 			cx: this.props.path[0].x,

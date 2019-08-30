@@ -1,9 +1,9 @@
 import React from 'react';
 
 export default class Pen extends React.Component {
-	constructor(){
-		super()
-	}
+	// constructor(){
+	// 	super()
+	// }
 	prepareData(){
 		let d = [`M ${this.props.path[0].x} ${this.props.path[0].y}`];
 
